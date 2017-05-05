@@ -1,11 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+
+  import Vue from 'vue'
+  import IView from 'iview'
+  import 'iview/dist/styles/iview.css'
+
+  Vue.use(IView)
+
   export default {
     name: 'app'
   }
@@ -13,11 +19,7 @@
 
 <style lang="scss">
   @import "./styles/base.scss";
-
-  #app {
-    text-align: center;
-    color: #2c3e50;
-    margin-top: rem(90px);
+  html, body, #app{
+    height: 100%;
   }
-
 </style>
