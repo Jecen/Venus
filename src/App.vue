@@ -1,43 +1,54 @@
 <template>
   <div id="app">
-    <shell>
-      <div slot="status" @click="showRouter">
-        1231231231
-      </div>
-      <div slot="content">
-        <router-view></router-view>
-      </div>
-    </shell>
+    <header>
+      <span>Vue.js PWA</span>
+    </header>
+    <main>
+      <img src="./assets/logo.png" alt="Vue.js PWA">
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
 <script>
-
-  import Vue from 'vue'
-  import IView from 'iview'
-  import Shell from './components/shell/index'
-  import 'iview/dist/styles/iview.css'
-
-  Vue.use(IView)
-
-  export default {
-    name: 'app',
-    methods: {
-      showRouter(){
-        console.log(this.$route)
-      }
-    },
-    components: {
-      'shell': Shell
-    }
-  }
+export default {
+  name: 'app',
+};
 </script>
 
-<style lang="scss">
-  @import "./styles/base.scss";
+<style>
+body {
+  margin: 0;
+}
 
-  html, body, #app {
-    height: 100%;
-    background: #eee;
-  }
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+main {
+  text-align: center;
+  margin-top: 40px;
+}
+
+header {
+  margin: 0;
+  height: 56px;
+  padding: 0 16px 0 24px;
+  background-color: #35495E;
+  color: #ffffff;
+}
+
+header span {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: .02em;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-top: 16px;
+}
 </style>
