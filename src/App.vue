@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <header>
-      <span>ousututu</span>
+      <div><img src="./assets/avatar.png" alt="ousututu"> <span>ousututu</span></div>
     </header>
     <main>
-      <img src="./assets/avatar.png" alt="ousututu">
       <router-view></router-view>
     </main>
   </div>
@@ -37,22 +36,27 @@ main img {
   height: 200px;
 }
 
-header {
+header div {
   margin: 0;
   height: 56px;
+  line-height: 56px;
   padding: 0 16px 0 24px;
   background-color: #35495e;
   color: #ffffff;
 }
 
-header span {
-  display: block;
-  position: relative;
+header div img {
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-top: 8px;
+}
+
+header div span {
   font-size: 20px;
-  line-height: 1;
   letter-spacing: 0.02em;
   font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
 }
 </style>
