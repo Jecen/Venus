@@ -13,6 +13,8 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs"
   },
   "dependencies": {
+    "eslint-config-tqfe": "^1.0.11",
+    "eslint-plugin-vue": "^4.3.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
