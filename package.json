@@ -15,8 +15,13 @@
   "dependencies": {
     "eslint-config-tqfe": "^1.0.11",
     "eslint-plugin-vue": "^4.3.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.0.5",
+    "lottie-web": "^5.1.7",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
