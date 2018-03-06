@@ -1,15 +1,10 @@
 <template>
-  <Layer><router-view /></Layer>
+  <router-view />
 </template>
 
 <script>
-import Layer from './components/layer'
-
 export default {
   name: 'App',
-  components: {
-    Layer,
-  },
 };
 </script>
 
